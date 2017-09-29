@@ -124,7 +124,7 @@
     // Adapt the search bar layout problem in the navigation bar on iOS 11
     // More details : https://github.com/iphone5solo/PYSearch/issues/108
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0) { // iOS 11
-        _searchBar.py_width = self.view.py_width - cancelButton.py_width - PYSEARCH_MARGIN * 3 - 8;
+        _searchBar.py_width = self.view.py_width - cancelButton.py_width - PYSEARCH_MARGIN * 3 - 8 - 20;
         _searchBar.py_height = self.view.py_width > self.view.py_height ? 24 : 30;
         _searchTextField.frame = _searchBar.bounds;
     } else {
